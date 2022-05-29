@@ -1,3 +1,5 @@
+# implement class Try using dictionaries
+
 class Trie:
     def __init__(self):
         self.head = {'*': '*'}
