@@ -1,6 +1,6 @@
 class Trie:
     def __init__(self):
-        self.head = {}
+        self.head = {'*': '*'}
 
     def insert(self, word):
         cur = self.head
@@ -10,7 +10,7 @@ class Trie:
 
             cur = cur[ch]
 
-        cur['*'] = True
+        cur['*'] = '*'
 
     def search(self, word):
         cur = self.head
