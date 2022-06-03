@@ -11,7 +11,7 @@
 
 
 class Solution:
-    def findJudge(self, n, trust) -> :
+    def findJudge(self, n, trust):
         g = Graph()
         for i in range(1, n + 1):
             g.addvertex(i)
