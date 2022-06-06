@@ -4,7 +4,7 @@
 # Suggested products should have common prefix with searchWord.
 # If there are more than three products with a common prefix return the three lexicographically minimums products.
 
-# Return a list of lists of the suggested products after each character of searchWord is typed.
+# Return a list of arrays of the suggested products after each character of searchWord is typed.
 
 
 
