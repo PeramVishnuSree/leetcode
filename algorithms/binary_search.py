@@ -5,17 +5,20 @@
 class Solution:
 
     def search(self, nums, target):
+        # binary search
 
-        nums_duplicate = nums
+        index = 0
+
         while len(nums) > 0:
-            print(nums)
             m = len(nums) // 2
             k = nums[m]
+
             if k == target:
-                return nums_duplicate.index(k)
+                return index + m
             elif k > target:
                 nums = nums[:m]
             else:
                 nums = nums[m + 1:]
+                index += m + 1
 
         return -1
