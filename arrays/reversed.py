@@ -9,15 +9,15 @@ class Solution:
             sign = False
             x = -1 * x
 
-        reversed = ''
+        rev = ''
         x = str(x)
         for i in range(1, len(x) + 1):
-            reversed += x[-1 * i]
+            rev += x[-1 * i]
 
         if sign is False:
-            reversed = -1 * int(reversed)
+            rev = -1 * int(rev)
         else:
-            reversed = int(reversed)
+            rev = int(rev)
 
-        if reversed > 2147483647 or reversed < -2147483647: return 0
-        return reversed
+        if rev > 2147483647 or rev < -2147483647 : return 0
+        return rev
